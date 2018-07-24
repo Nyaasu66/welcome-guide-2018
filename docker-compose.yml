@@ -1,0 +1,5 @@
+app:
+  restart: unless-stopped
+  build: .
+  ports:
+    - 7777:1217
