@@ -54,20 +54,20 @@ docker-compose up -d
 ###测试-Chrome模拟设备
   
 >Nexus 5X - 用于模拟16:9的显示屏  
->iPhone 6/7/8 - 用于模拟18:9的全面屏
->(考虑到在南大家园打开的页面视口偏小故采用以上机型)
+>iPhone 6/7/8 - 用于模拟18:9的全面屏  
+>(考虑到在南大家园打开的页面视口偏小故采用以上机型)  
 
 ##使用的框架和模块
->jQuery - 1.10.2
->jquery.mobile - 1.4.5
->jQuery UI
->Node.js
->>body-parser: ~1.15.1
->>cookie-parser: ~1.4.3
->>debug: ~2.2.0
->>ejs: ~2.4.1
->>express: ~4.13.4
->>morgan": ~1.7.0
->>serve-favicon: ~2.3.0
-  
+>jQuery - 1.10.2  
+>jquery.mobile - 1.4.5  
+>jQuery UI  
+>Node.js  
+>>body-parser: ~1.15.1  
+>>cookie-parser: ~1.4.3  
+>>debug: ~2.2.0  
+>>ejs: ~2.4.1  
+>>express: ~4.13.4  
+>>morgan": ~1.7.0  
+>>serve-favicon: ~2.3.0  
+   
 未完待续
