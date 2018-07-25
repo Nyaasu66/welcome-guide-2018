@@ -12,8 +12,8 @@ npm install
 npm start
 
 ```
-
-##目录结构
+  
+## 目录结构
 ```
 +-- bin/  gulp编译打包热加载配置文件
 | 
@@ -42,22 +42,23 @@ npm start
 |   |   +-- index.css  scss编译后文件
 |   |   | 
 |   |   +-- *.svg  图片资源
-```
-##部署
+```  
+  
+## 部署
 
 ```bash
 git pull
 docker-compose build
 docker-compose up -d
-```
+```  
 
-###测试-Chrome模拟设备
+### 测试-Chrome模拟设备  
   
 >Nexus 5X - 用于模拟16:9的显示屏  
 >iPhone 6/7/8 - 用于模拟18:9的全面屏  
 >(考虑到在南大家园打开的页面视口偏小故采用以上机型)  
 
-##使用的框架和模块
+## 使用的框架和模块  
 >jQuery - 1.10.2  
 >jquery.mobile - 1.4.5  
 >jQuery UI  
