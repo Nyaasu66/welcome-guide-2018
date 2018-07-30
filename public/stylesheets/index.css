@@ -18,8 +18,8 @@
 .cloud-left{
   background-image: url(../images/cloud-left.png);
   height: 41%;
-  animation: imgFadeIn 1s;
-  -webkit-animation: imgFadeIn 1s;
+  animation: imgFadeIn 1s 0.3s;
+  -webkit-animation: imgFadeIn 1s 0.3s;
   opacity: 0;
 }
 
@@ -29,12 +29,12 @@
   bottom: 0%;
   height: 40.5%;
   width: 93%;
-  animation: imgFadeIn 1s 0.4s;
-  -webkit-animation: imgFadeIn 1s 0.4s;
+  animation: imgFadeIn 1s 0.7s;
+  -webkit-animation: imgFadeIn 1s 0.7s;
   opacity: 0;
 }
 
-.main_words{
+.open_words{
   background-image: url(../images/main_words.png);
   background-repeat:no-repeat; 
   background-size:100% 100%;
@@ -47,8 +47,8 @@
   margin-left: -2.1rem;
   z-index: 2;
   transition: opacity 0.6s;
-  animation: showOpacity 0.9s 0.9s;
-  -webkit-animation: showOpacity 0.9s 0.9s;
+  animation: showOpacity 0.9s 1.2s;
+  -webkit-animation: showOpacity 0.9s 1.2s;
   opacity: 0;
 }
 
@@ -69,8 +69,8 @@
   border-radius: 2px;
   box-shadow: 1px 2px 4px #d0d0d0;
   transition: opacity 0.6s;
-  animation: showOpacity 1s 1.5s;
-  -webkit-animation: showOpacity 1s 1.5s;
+  animation: showOpacity 0.6s 1.6s;
+  -webkit-animation: showOpacity 0.6s 1.6s;
   opacity: 0;
 }
 
@@ -122,7 +122,7 @@
   background-size: 1.24rem 1.24rem;
 }
 .start-page-footer{
-  color: #4fb2ff;
+  color: #88ccfc;
   font-size: 0.32rem;
   width: 3.5rem;
   height: 0.72rem;
@@ -140,8 +140,8 @@
   margin-left: -2.2rem;
   z-index: 2;
   transition: opacity 0.6s;
-  animation: showOpacity 1s 2.5s;
-  -webkit-animation: showOpacity 1s 2.5s;
+  animation: showOpacity 1s 2.8s;
+  -webkit-animation: showOpacity 1s 2.8s;
   opacity: 0;
 }
 
