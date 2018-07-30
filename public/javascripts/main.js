@@ -43,3 +43,13 @@ var start = function() {
 }
 
 start()
+
+
+function showOpacity(){
+  this.style.opacity = '1'
+}
+
+var allAnimate = document.getElementsByClassName("animates")
+for(i=0, l = allAnimate.length; i < l; i++){
+  allAnimate[i].addEventListener('animationend', showOpacity, false)
+}
