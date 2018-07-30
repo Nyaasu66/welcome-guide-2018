@@ -8,7 +8,7 @@ var start = function() {
     startBtn.addEventListener('touchend', function() {
       if(startBtnOnce) {
         startBtnOnce = false
-        document.getElementById('start-page-welcome').style.opacity = '0'
+        document.getElementById('main_words').style.opacity = '0'
         this.style.opacity = '0'
         setTimeout(function() {
           var guideUrl = ['1','2','3','4']
