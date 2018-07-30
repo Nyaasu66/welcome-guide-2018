@@ -126,3 +126,17 @@
     background-size: 1080px 1920px;
   }
 }
+
+@keyframes tree {
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes tree {
+  100% {
+      -webkit-transform: translateY(0px);
+      opacity: 1;
+  }
+}

@@ -18,6 +18,12 @@
   margin-left: -2.1rem;
   z-index: 2;
   transition: opacity 0.6s;
+  animation: showOpacity 0.6s 0.9s;
+  /* Safari and Chrome */
+  -webkit-animation: showOpacity 0.6s 0.9s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .start-page-btn{
@@ -46,17 +52,14 @@
   -moz-background-size:100% 100%;
   bottom: 0rem;
   z-index: 1;
-
 }
 
 .cloud-left{
   background-image: url(../images/cloud-left.png);
   height: 41%;
-  animation: cloudLeft 1.7s infinite;
-  animation-timing-function: linear;
+  animation: imgFadeIn 0.6s;
   /* Safari and Chrome */
-  -webkit-animation: cloudLeft 1.7s;
-  -webkit-animation-timing-function: linear;
+  -webkit-animation: imgFadeIn 0.6s;
 }
 
 .cloud-right{
@@ -65,11 +68,12 @@
   bottom: 0%;
   height: 40.5%;
   width: 93%;
-  animation: cloudRight 1.7s infinite;
-  animation-timing-function: linear;
+  animation: imgFadeIn 0.6s;
   /* Safari and Chrome */
-  -webkit-animation: cloudRight 1.7s;
-  -webkit-animation-timing-function: linear;
+  -webkit-animation: imgFadeIn 0.6s 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .guide-list{
@@ -77,6 +81,7 @@
   margin: 0 auto;
   padding-top: 20%;
 }
+
 .guide-list li{
   height: 5.74rem;
   width: 5.1rem;
@@ -85,6 +90,8 @@
   float: left;
   animation: showOpacity 0.6s;
   animation-fill-mode: forwards;
+  -webkit-animation: showOpacity 0.6s;
+  -webkit-animation-fill-mode: forwards;
   transition: background-image 0.6s;
 }
 .guide-list li:nth-child(2) {
@@ -135,6 +142,13 @@
   left: 50%;
   margin-left: -2.2rem;
   z-index: 2;
+  transition: opacity 0.6s;
+  animation: showOpacity 1s 1.5s;
+  /* Safari and Chrome */
+  -webkit-animation: showOpacity 1s 1.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 320px) {
@@ -169,44 +183,33 @@
   }
 }
 
-@keyframes cloudLeft {
-  from {
-    left: -100%;
+@-webkit-keyframes showOpacity {
+  0% {
+    opacity: 0;
   }
-  to {
-    left: 0%;
-  }
-}
-
-@-webkit-keyframes cloudLeft
-/* Safari and Chrome */
-
-{
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0%;
+  100% {
+    opacity: 1;
   }
 }
 
-@keyframes cloudRight {
-  from {
-    left: 100%;
+@keyframes imgFadeIn {
+  0% {
+    bottom: -5rem;
+    opacity: 0;
   }
-  to {
-    left: 7%;
+  100% {
+    bottom: 0;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes cloudRight
-/* Safari and Chrome */
-
-{
-  from {
-    left: 100%;
+@-webkit-keyframes imgFadeIn {
+  0% {
+    bottom: -5rem;
+    opacity: 0;
   }
-  to {
-    left: 7%;
+  100% {
+    bottom: 0;  
+    opacity: 1;
   }
 }
