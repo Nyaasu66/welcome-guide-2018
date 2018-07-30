@@ -39,3 +39,5 @@ a::-webkit-selection{
 .clear{
   clear: both;
 }
+
+* { touch-action: none; }
