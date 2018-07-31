@@ -181,7 +181,6 @@
   top: 4.8%;
   margin-left: -4.6rem;
   margin-top: 1rem;
-  display:block;
   z-index: 10;
   display: none;
 }
@@ -192,6 +191,7 @@
   width: 9.1rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  display: block;
 }
 
 
@@ -217,8 +217,27 @@
   top: 7.7rem;
   left: 0.38rem
 }
-/*
 
+.guide-title{
+  font-size: 0.8rem;
+  left: 1.2rem;
+  top: 0.2rem;
+  font-family: DroidSansFallback;
+  font-weight: 600;
+  position: relative;
+  color: #151515
+}
+
+.guide-desc{
+  color: rgba(0,0,0,0.5);
+  font-size: 0.43rem;
+  font-weight: 600;
+  left: 2.7rem;
+  top: 0.25rem;
+  position: relative;
+  font-family: DroidSansFallback;
+}
+/*
 .guide-list li{
   height: 5.74rem;
   width: 5.1rem;
