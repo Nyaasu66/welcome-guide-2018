@@ -243,7 +243,7 @@
   background-position-x: 0.55rem;
   background-position-y: 0.12rem;
   position: absolute;
-  bottom: 0.1rem;
+  bottom: 0.05rem;
   left: 50%;
   margin-left: -2.3rem;
   z-index: 7;
@@ -302,14 +302,32 @@
   }
 }
 
-@-webkit-keyframes cloudFadeIn {
+@-webkit-keyframes cloudFadeOut {
   0% {
-    bottom: -5rem;
+    bottom: 5rem;
     opacity: 0;
   }
   100% {
-    bottom: 0;  
+    bottom: 2.5rem;  
     opacity: 1;
+  }
+}
+
+@keyframes cloudFadeOut {
+  0% {
+    bottom: 0rem;
+  }
+  100% {
+    bottom: -2.5rem;
+  }
+}
+
+@-webkit-keyframes cloudFadeOut {
+  0% {
+    bottom: 0rem;
+  }
+  100% {
+    bottom: -2.5rem;
   }
 }
 
