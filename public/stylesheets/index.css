@@ -176,40 +176,46 @@
 .guide-list{
   margin: 0 auto;
   list-style-type:none;
-}
-
-.guide-list li {
-  display:block;
   position: absolute;
-  left:50%;
-  top: 10%;
+  left: 50%;
+  top: 4.8%;
+  margin-left: -4.6rem;
+  margin-top: 1rem;
+  display:block;
+  z-index: 10;
+  display: none;
 }
 
 .guide-list li a{
-  display:block;
+  position: absolute;
   height: 2rem;
-  width: 5.1rem;
+  width: 9.1rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: -1.1rem;
-  margin-top: 1rem;
 }
 
 
 .guide-1{
-  background-image: url("../images/guide-before-1.png")
+  background-image: url("../images/guide-before-1.png");
+  left: -0.3rem;
 }
 
 .guide-2{
-  background-image: url("../images/guide-before-2.png")
+  background-image: url("../images/guide-before-2.png");
+  top: 2.58rem;
+  left: 0.38rem
 }
 
 .guide-3{
-  background-image: url("../images/guide-before-3.png")
+  background-image: url("../images/guide-before-3.png");
+  top: 5.2rem;
+  left: -0.3rem;
 }
 
 .guide-4{
-  background-image: url("../images/guide-before-4.png")
+  background-image: url("../images/guide-before-4.png");
+  top: 7.7rem;
+  left: 0.38rem
 }
 /*
 

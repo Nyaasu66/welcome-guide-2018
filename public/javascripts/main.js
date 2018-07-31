@@ -16,6 +16,7 @@ var start = function() {
         document.getElementById('cloud-right').style.animation = 'cloudFadeOut 1s 0.37s'
         document.getElementById('cloud-right').style.animationFillMode = 'forwards'
         //菜单生成
+        menuAppear()
         /*
                 setTimeout(function() {
           var guideUrl = ['1','2','3','4']
@@ -50,8 +51,6 @@ var start = function() {
   }
 }
 
-start()
-
 //使animates类的元素在动画执行完后继续保持显示
 function showOpacity(){this.style.opacity = '1'}
 var allAnimate = document.getElementsByClassName("animates")
@@ -69,3 +68,9 @@ function imgDisappear(){
     allImgDisapr[i].style.opacity = '0'
   }
 }
+
+function menuAppear(){
+  document.getElementById('guide-list').style.display = 'block'
+}
+
+start()
