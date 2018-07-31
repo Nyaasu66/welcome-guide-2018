@@ -17,35 +17,6 @@ var start = function() {
         document.getElementById('cloud-right').style.animationFillMode = 'forwards'
         //菜单生成
         menuAppear()
-        /*
-          setTimeout(function() {
-          var guideUrl = ['1','2','3','4']
-          var guideName = ['入校事宜','学业指导','校园文化','乐居香樟']
-          for(var i=0; i<5; i++) {
-            if(i === 4) {
-              var clearDom = document.createElement('div')
-              clearDom.className = 'clear'
-              document.getElementById('guide-list').appendChild(clearDom)
-            }
-            else {
-              var guideList = document.createElement('li')
-              guideList.className = 'guide-li-' + (i + 1)
-              guideList.setAttribute('index', i)
-              guideList.innerHTML = '<a href="./guide#' + guideUrl[i] + '" style="background-image: url(images/guide-icon-' + (i+1) + '.png">' + guideName[i] + '</a>'
-              guideList.style.backgroundImage = 'url(./images/guide-before-bg-' + (i + 1) + '.png)';
-              document.getElementById('guide-list').appendChild(guideList)
-              guideList.addEventListener('touchstart', function() {
-                var thisIndex = parseInt(this.getAttribute('index'))
-                this.style.backgroundImage = 'url(./images/guide-after-bg-' + (thisIndex + 1) + '.png)'
-              })
-              guideList.addEventListener('touchend', function() {
-                var thisIndex = parseInt(this.getAttribute('index'))
-                this.style.backgroundImage = 'url(./images/guide-before-bg-' + (thisIndex + 1) + '.png)'
-              })
-            }
-          }
-        }, 600)
-        */
       }
     })
   }
