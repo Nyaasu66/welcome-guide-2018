@@ -18,8 +18,8 @@
 .cloud-left{
   background-image: url(../images/cloud-left.png);
   height: 41%;
-  animation: cloudFadeIn 1s 0.7s;
-  -webkit-animation: cloudFadeIn 1s 0.7s;
+  animation: cloudFadeIn 1s 1s;
+  -webkit-animation: cloudFadeIn 1s 1s;
   opacity: 0;
 }
 
@@ -29,8 +29,8 @@
   bottom: 0%;
   height: 40.5%;
   width: 93%;
-  animation: cloudFadeIn 1s 1s;
-  -webkit-animation: cloudFadeIn 1s 1s;
+  animation: cloudFadeIn 1s 1.3s;
+  -webkit-animation: cloudFadeIn 1s 1.3s;
   opacity: 0;
 }
 
@@ -60,8 +60,8 @@
   bottom: 43%;
   right: 0.35rem;
   z-index: 3;
-  animation: guideFadeIn 1s 1.9s;
-  -webkit-animation: guideFadeIn 1s 1.9s;
+  animation: guideFadeIn 1s 2.3s;
+  -webkit-animation: guideFadeIn 1s 2.3s;
   opacity: 0;
 }
 
@@ -77,8 +77,8 @@
   bottom: 65%;
   right: 2.2rem;
   z-index: 3;
-  animation: ncuFadeIn 1s 2.3s;
-  -webkit-animation: ncuFadeIn 1s 2.3s;
+  animation: ncuFadeIn 1s 2.8s;
+  -webkit-animation: ncuFadeIn 1s 2.8s;
   opacity: 0;
 }
 
@@ -146,8 +146,8 @@
   margin-left: -2.1rem;
   z-index: 2;
   transition: opacity 0.6s;
-  animation: showOpacity 0.9s 2.7s;
-  -webkit-animation: showOpacity 0.9s 2.7s;
+  animation: showOpacity 0.8s 3.7s;
+  -webkit-animation: showOpacity 0.8s 3.7s;
   opacity: 0;
 }
 
@@ -168,8 +168,8 @@
   border-radius: 2px;
   box-shadow: 1px 2px 4px #d0d0d0;
   transition: opacity 0.6s;
-  animation: showOpacity 0.6s 3.5s;
-  -webkit-animation: showOpacity 0.6s 3.5s;
+  animation: showOpacity 0.5s 4.3s;
+  -webkit-animation: showOpacity 0.5s 4.3s;
   opacity: 0;
 }
 
@@ -238,8 +238,8 @@
   margin-left: -2.3rem;
   z-index: 2;
   transition: opacity 0.6s;
-  animation: showOpacity 1.2s 4s;
-  -webkit-animation: showOpacity 1.2s 4s;
+  animation: showOpacity 1.4s 5.5s;
+  -webkit-animation: showOpacity 1.4s 5.5s;
   opacity: 0;
 }
 
