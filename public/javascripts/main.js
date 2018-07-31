@@ -16,7 +16,7 @@ var start = function() {
         //云层离开效果
         document.getElementById('cloud-left').style.animation = 'cloudFadeOut 1s 0.3s'
         document.getElementById('cloud-left').style.animationFillMode = 'forwards'
-        document.getElementById('cloud-right').style.animation = 'cloudFadeOut 1s 0.3s'
+        document.getElementById('cloud-right').style.animation = 'cloudFadeOut 1s 0.35s'
         document.getElementById('cloud-right').style.animationFillMode = 'forwards'
         setTimeout(function() {
           var guideUrl = ['1','2','3','4']
