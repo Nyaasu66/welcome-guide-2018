@@ -75,6 +75,10 @@ function menuAppear(){
   document.getElementById('guide-2').style.animation = 'guideRight 1.3s ease-in-out 1.6s'
   document.getElementById('guide-3').style.animation = 'guideLeft 1.3s ease-in-out 2.6s'
   document.getElementById('guide-4').style.animation = 'guideRight 1.3s ease-in-out 3.6s'
+  document.getElementById('guide-1').style.animationFillMode = 'forwards'
+  document.getElementById('guide-2').style.animationFillMode = 'forwards'
+  document.getElementById('guide-3').style.animationFillMode = 'forwards'
+  document.getElementById('guide-4').style.animationFillMode = 'forwards'
 }
 
 start()

@@ -197,25 +197,25 @@
 
 .guide-1{
   background-image: url("../images/guide-before-1.png");
-  left: -0.3rem;
+  left: -11rem;
 }
 
 .guide-2{
   background-image: url("../images/guide-before-2.png");
   top: 2.58rem;
-  left: 0.38rem
+  left: 11rem
 }
 
 .guide-3{
   background-image: url("../images/guide-before-3.png");
   top: 5.2rem;
-  left: -0.3rem;
+  left: -11rem;
 }
 
 .guide-4{
   background-image: url("../images/guide-before-4.png");
   top: 7.7rem;
-  left: 0.38rem
+  left: 11rem
 }
 
 .guide-title-left{
@@ -451,7 +451,7 @@
 
 @keyframes guideLeft {
   0% {
-    left:-8rem;
+    left:-11rem;
   }
   70% {
     left: 0.2rem;
@@ -463,7 +463,7 @@
 
 @-webkit-keyframes guideLeft {
   0% {
-    left:-8rem;
+    left:-11rem;
   }
   70% {
     left: 0.2rem;
@@ -475,7 +475,7 @@
 
 @keyframes guideRight {
   0% {
-    left:8rem;
+    left:11rem;
   }
   70% {
     left: -0.28rem;
@@ -487,7 +487,7 @@
 
 @-webkit-keyframes guideRight {
   0% {
-    left:8rem;
+    left:11rem;
   }
   70% {
     left: -0.28rem;
