@@ -229,13 +229,13 @@
   padding-left: 0.95rem;
   background-image: url(../images/logo.png);
   background-repeat: no-repeat;
-  background-size: 0.6rem 0.6rem;
-  background-position-x: 0.3rem;
-  background-position-y: 0.09rem;
+  background-size: 0.5rem 0.5rem;
+  background-position-x: 0.55rem;
+  background-position-y: 0.12rem;
   position: absolute;
-  bottom: 0.15rem;
+  bottom: 0.1rem;
   left: 50%;
-  margin-left: -2.2rem;
+  margin-left: -2.3rem;
   z-index: 2;
   transition: opacity 0.6s;
   animation: showOpacity 1.2s 4s;
