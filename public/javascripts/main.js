@@ -71,6 +71,10 @@ function imgDisappear(){
 
 function menuAppear(){
   document.getElementById('guide-list').style.display = 'block'
+  document.getElementById('guide-1').style.animation = 'guideLeft 1.3s ease-in-out 0.6s'
+  document.getElementById('guide-2').style.animation = 'guideRight 1.3s ease-in-out 1.6s'
+  document.getElementById('guide-3').style.animation = 'guideLeft 1.3s ease-in-out 2.6s'
+  document.getElementById('guide-4').style.animation = 'guideRight 1.3s ease-in-out 3.6s'
 }
 
 start()

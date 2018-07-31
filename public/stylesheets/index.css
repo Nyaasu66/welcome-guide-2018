@@ -448,3 +448,51 @@
     opacity: 1;
   }
 }
+
+@keyframes guideLeft {
+  0% {
+    left:-8rem;
+  }
+  70% {
+    left: 0.2rem;
+  }
+  100% {
+   left: -0.3rem
+  }
+}
+
+@-webkit-keyframes guideLeft {
+  0% {
+    left:-8rem;
+  }
+  70% {
+    left: 0.2rem;
+  }
+  100% {
+    left: -0.3rem
+  }
+}
+
+@keyframes guideRight {
+  0% {
+    left:8rem;
+  }
+  70% {
+    left: -0.28rem;
+  }
+  100% {
+   left: 0.38rem
+  }
+}
+
+@-webkit-keyframes guideRight {
+  0% {
+    left:8rem;
+  }
+  70% {
+    left: -0.28rem;
+  }
+  100% {
+    left: 0.38rem
+  }
+}
