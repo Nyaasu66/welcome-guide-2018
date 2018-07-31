@@ -44,7 +44,66 @@ npm start
 |   |   +-- *.svg  图片资源
 ```  
   
-## 部署
+## 部署  
+
+* 使用Apache反向代理 + Node.js 部署
+```bash 
+cd /data/guide 
+git pull origin master
+cnpm install
+```
+安装pm2进程守护程序,代码即可在后台启动(pm2 具有性能监控、自动重启、负载均衡等功能)
+```bash
+npm install -g pm2
+pm2 start ./bin/www --watch
+```
+查看进程状态
+```
+pm2 list  
+```
+
+接着在Apache (httpd2.4)
+配置httpd.conf文件，在文件后添加
+```
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+LoadModule proxy_ftp_module modules/mod_proxy_ftp.so
+LoadModule proxy_connect_module modules/mod_proxy_connect.so
+
+
+<VirtualHost *:80>
+ServerName welcome.nyaasu.top
+ 
+ProxyRequests off
+ 
+<Proxy *>
+Order deny,allow
+Allow from all
+</Proxy>
+ 
+<Location />
+ProxyPass http://localhost:1217/
+ProxyPassReverse http://localhost:1217/
+</Location>
+</VirtualHost>
+```
+然后在bash输入以下内容，即可实现访问
+
+```
+service httpd stop
+service httpd start
+```
+
+注：使用Ubuntu的apt-get安装的是Apache2，不是httpd2.4. 在CentOS上可通过``` yum install httpd ```安装，而Ubuntu上可以通过在官网上下载源码，或者使用Oneinstack一键安装工具安装。
+
+参考链接：
+
+1.[Apache设置反向代理访问 NodeJs 网站](https://blog.csdn.net/cen_cs/article/details/50663175)
+2.[PM2实用入门指南](https://www.cnblogs.com/chyingp/p/pm2-documentation.html)
+3.[Ubuntu LTS 16.04 编译安装配置Apache](https://www.centos.bz/2017/10/ubuntu-lts-16-04-%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEapache/)
+4.[OneinStack - 一键PHP/JAVA安装工具](https://oneinstack.com/)
+
+* 使用Docker部署（2017的方法，可能属个人原因，经部署跑不起来）  
 
 ```bash
 git pull
