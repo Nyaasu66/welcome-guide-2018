@@ -4,7 +4,7 @@
 
 ## 安装及操作
 
-``` bash  
+```  
 
 # 安装依赖
 npm install
@@ -48,7 +48,7 @@ npm start
 ## 部署  
 
 * 使用Apache反向代理 + Node.js 部署
-```bash 
+```
 cd /data/guide
 # 从远程仓库获取分支 
 git pull origin master
@@ -56,7 +56,8 @@ git pull origin master
 cnpm install
 ```
 安装pm2进程守护程序,代码即可在后台启动 (pm2 具有性能监控、自动重启、负载均衡等功能)
-```bash  
+
+```
 # 全局安装
 npm install -g pm2
 # 启动进程
