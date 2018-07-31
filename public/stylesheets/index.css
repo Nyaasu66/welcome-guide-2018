@@ -164,7 +164,6 @@
   bottom: 8%;
   left: 50%;
   margin-left: -1.8rem;
-  transition: opacity 0.6s;
   z-index: 7;
   border-radius: 2px;
   box-shadow: 1px 2px 4px #d0d0d0;
@@ -174,14 +173,6 @@
   opacity: 0;
 }
 
-.img_mask{
-  background-image: url(../images/main-bg.png);
-  background-repeat: repeat-x;
-  position: absolute;
-  z-index: 5;
-  opacity: 0;
-  transition: opacity 0.6s;
-}
 
 .guide-list{
   width: calc(100% - 0.5rem);
@@ -251,6 +242,10 @@
   animation: showOpacity 1.4s 5s;
   -webkit-animation: showOpacity 1.4s 5s;
   opacity: 0;
+}
+
+.img-disapr{
+  transition: opacity 0.6s;
 }
 
 @media only screen and (min-width: 320px) {

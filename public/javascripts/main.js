@@ -8,11 +8,8 @@ var start = function() {
     startBtn.addEventListener('touchend', function() {
       if(startBtnOnce) {
         startBtnOnce = false
-        //云层中的元素消失
-        document.getElementById('open_words').style.opacity = '0'
-        this.style.opacity = '0'
-        //云层上部的元素消失
-        document.getElementById('img_mask').style.opacity = '1'
+        //元素消失
+        imgDisappear()
         //云层离开效果
         document.getElementById('cloud-left').style.animation = 'cloudFadeOut 1s 0.3s'
         document.getElementById('cloud-left').style.animationFillMode = 'forwards'
@@ -54,12 +51,19 @@ var start = function() {
 start()
 
 //使animates类的元素在动画执行完后继续保持显示
-function showOpacity(){
-  this.style.opacity = '1'
-}
-
+function showOpacity(){this.style.opacity = '1'}
 var allAnimate = document.getElementsByClassName("animates")
 for(i=0, l = allAnimate.length; i < l; i++){
   allAnimate[i].addEventListener('animationend', showOpacity, false)
 }
 
+function imgDisappear(){
+  //云层中的元素消失
+  document.getElementById('open_words').style.opacity = '0'
+  document.getElementById('start-page-btn').style.opacity = '0'
+  //云层上部的元素消失
+  var allImgDisapr = document.getElementsByClassName("img-disapr")
+  for(i=0, l = allImgDisapr.length; i < l; i++){
+    allImgDisapr[i].style.opacity = '0'
+  }
+}
