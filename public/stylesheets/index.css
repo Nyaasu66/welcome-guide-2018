@@ -218,22 +218,42 @@
   left: 0.38rem
 }
 
-.guide-title{
+.guide-title-left{
   font-size: 0.8rem;
   left: 1.2rem;
-  top: 0.2rem;
+  top: 0.28rem;
   font-family: DroidSansFallback;
   font-weight: 600;
   position: relative;
   color: #151515
 }
 
-.guide-desc{
+.guide-desc-left{
   color: rgba(0,0,0,0.5);
   font-size: 0.43rem;
   font-weight: 600;
   left: 2.7rem;
-  top: 0.25rem;
+  top: 0.3rem;
+  position: relative;
+  font-family: DroidSansFallback;
+}
+
+.guide-title-right{
+  font-size: 0.8rem;
+  left: 2.2rem;
+  top: 0.28rem;
+  font-family: DroidSansFallback;
+  font-weight: 600;
+  position: relative;
+  color: #151515
+}
+
+.guide-desc-right{
+  color: rgba(0,0,0,0.5);
+  font-size: 0.43rem;
+  font-weight: 600;
+  left: 0.7rem;
+  top: 0.3rem;
   position: relative;
   font-family: DroidSansFallback;
 }
