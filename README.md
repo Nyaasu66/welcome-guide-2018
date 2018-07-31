@@ -48,6 +48,7 @@ npm start
 ## 部署  
 
 * 使用Apache反向代理 + Node.js 部署  
+
 ```
 cd /data/guide
 # 从远程仓库获取分支 
