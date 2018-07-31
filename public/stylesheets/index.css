@@ -1,7 +1,7 @@
 .start-page{
   background-image: url(../images/main-bg.png);
   background-repeat: repeat-x;
-  position: relative;
+  position: absolute;
   z-index: 0;
 }
 
@@ -177,7 +177,7 @@
 .img_mask{
   background-image: url(../images/main-bg.png);
   background-repeat: repeat-x;
-  position: relative;
+  position: absolute;
   z-index: 5;
   opacity: 0;
   transition: opacity 0.6s;
