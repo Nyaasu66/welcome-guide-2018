@@ -12,7 +12,6 @@
   background-size:100% 100%;
   -moz-background-size:100% 100%;
   bottom: 0rem;
-  z-index: 1;
 }
 
 .cloud-left{
@@ -21,6 +20,7 @@
   animation: cloudFadeIn 1s 1s;
   -webkit-animation: cloudFadeIn 1s 1s;
   opacity: 0;
+  z-index: 6;
 }
 
 .cloud-right{
@@ -32,6 +32,7 @@
   animation: cloudFadeIn 1s 1.3s;
   -webkit-animation: cloudFadeIn 1s 1.3s;
   opacity: 0;
+  z-index: 5;
 }
 
 .main_title{
@@ -144,7 +145,7 @@
   bottom: 18%;
   left: 50%;
   margin-left: -2.1rem;
-  z-index: 2;
+  z-index: 7;
   transition: opacity 0.6s;
   animation: showOpacity 0.8s 3.7s;
   -webkit-animation: showOpacity 0.8s 3.7s;
@@ -164,13 +165,22 @@
   left: 50%;
   margin-left: -1.8rem;
   transition: opacity 0.6s;
-  z-index: 3;
+  z-index: 7;
   border-radius: 2px;
   box-shadow: 1px 2px 4px #d0d0d0;
   transition: opacity 0.6s;
   animation: showOpacity 0.5s 4.3s;
   -webkit-animation: showOpacity 0.5s 4.3s;
   opacity: 0;
+}
+
+.img_mask{
+  background-image: url(../images/main-bg.png);
+  background-repeat: repeat-x;
+  position: relative;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.6s;
 }
 
 .guide-list{
@@ -236,30 +246,29 @@
   bottom: 0.1rem;
   left: 50%;
   margin-left: -2.3rem;
-  z-index: 2;
-  transition: opacity 0.6s;
+  z-index: 7;
   animation: showOpacity 1.4s 5.5s;
   -webkit-animation: showOpacity 1.4s 5.5s;
   opacity: 0;
 }
 
 @media only screen and (min-width: 320px) {
-  .start-page{
+  .start-page .img_mask{
     background-size: 540px 960px;
   }
 }
 @media only screen and (min-width: 480px) {
-  .start-page{
+  .start-page .img_mask{
     background-size: 720px 1280px;
   }
 }
 @media only screen and (min-width: 650px) {
-  .start-page{
+  .start-page .img_mask{
     background-size: 810px 1440px;
   }
 }
 @media only screen and (min-width: 960px) {
-  .start-page{
+  .start-page .img_mask{
     background-size: 1080px 1920px;
   }
 }

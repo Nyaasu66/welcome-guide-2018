@@ -8,8 +8,11 @@ var start = function() {
     startBtn.addEventListener('touchend', function() {
       if(startBtnOnce) {
         startBtnOnce = false
+        //云层中的元素消失
         document.getElementById('open_words').style.opacity = '0'
         this.style.opacity = '0'
+        //云层上部的元素消失
+        document.getElementById('img_mask').style.opacity = '1'
         setTimeout(function() {
           var guideUrl = ['1','2','3','4']
           var guideName = ['入校事宜','学业指导','校园文化','乐居香樟']

@@ -40,4 +40,6 @@ a::-webkit-selection{
   clear: both;
 }
 
+
+/*防止被动Touch事件使Chrome报错*/
 * { touch-action: none; }
