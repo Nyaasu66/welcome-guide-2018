@@ -79,6 +79,8 @@ function menuAppear(){
   document.getElementById('guide-2').style.animationFillMode = 'forwards'
   document.getElementById('guide-3').style.animationFillMode = 'forwards'
   document.getElementById('guide-4').style.animationFillMode = 'forwards'
+  document.getElementById('bubbles-container').style.animation = 'bubblesFadeIn 1.3s ease 0.3s'
+  document.getElementById('bubbles-container').style.animationFillMode = 'forwards'
 }
 
 start()

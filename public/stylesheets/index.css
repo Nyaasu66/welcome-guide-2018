@@ -257,48 +257,68 @@
   position: relative;
   font-family: DroidSansFallback;
 }
-/*
-.guide-list li{
-  height: 5.74rem;
-  width: 5.1rem;
+
+.bubbles{
+  position: absolute;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  float: left;
-  animation: showOpacity 0.6s;
-  -webkit-animation: showOpacity 0.6s;
-  transition: background-image 0.6s;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
 }
-.guide-list li:nth-child(2) {
-  margin-top: 1rem;
+
+.bubbles-container{
+  opacity: 0;;
+  position: absolute;
+  top: -1rem;
 }
-.guide-list li:nth-child(3) {
-  margin-top: -1rem;
+
+.bb-loop-s1{
+  background-image: url(../images/bb-loop-s.png);
+  height: 0.45rem;
+  width: 0.45rem;
+  top: 1rem;
+  left: 2.1rem;
 }
-.guide-list li a{
-  color: #fff;
-  font-size: 0.42rem;
-  display: block;
-  text-align: center;
-  letter-spacing: 1px;
-  height: 0.42rem;
-  line-height: 0.42rem;
-  padding: 3.58rem 0 1.55rem 0;
-  background-repeat: no-repeat;
-  background-position: center center;
+
+.bb-loop-l{
+  background-image: url(../images/bb-loop-l.png);
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 1.2rem;
+  left: 7.5rem;
 }
-.guide-list li:first-child a{
-  background-size: 1.27rem 1.03rem;
+
+.bb-loop-m{
+  background-image: url(../images/bb-loop-m.png);
+  height: 1.3rem;
+  width: 1.3rem;
+  top: 5.4rem;
+  left: 6rem;
 }
-.guide-list li:nth-child(2) a{
-  background-size: 1.46rem 1.09rem;
+
+.bb-loop-s2{
+  background-image: url(../images/bb-loop-s.png);
+  height: 0.45rem;
+  width: 0.45rem;
+  top: 8.7rem;
+  right: -10.6rem;
 }
-.guide-list li:nth-child(3) a{
-  background-size: 1.15rem 1.22rem;
+
+.bb-delta{
+  background-image: url(../images/bb-delta.png);
+  height: 1.3rem;
+  width: 1.3rem;
+  top: 8.2rem;
+  left: -0.2rem;
 }
-.guide-list li:nth-child(4) a{
-  background-size: 1.24rem 1.24rem;
+
+.bb-square{
+  background-image: url(../images/bb-square.png);
+  height: 0.9rem;
+  width: 0.9rem;
+  top: 11.6rem;
+  right: -8.3rem;
 }
-*/
+
 .start-page-footer{
   color: #88ccfc;
   font-size: 0.32rem;
@@ -325,6 +345,7 @@
 .img-disapr{
   transition: opacity 0.6s;
 }
+
 
 @media only screen and (min-width: 320px) {
   .start-page .img_mask{
@@ -494,5 +515,27 @@
   }
   100% {
     left: 0.38rem
+  }
+}
+
+@keyframes bubblesFadeIn {
+  0% {
+    top: -1rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bubblesFadeIn {
+  0% {
+    top: -1rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
   }
 }
