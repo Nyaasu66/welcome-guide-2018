@@ -78,8 +78,8 @@
   bottom: 65%;
   right: 2.2rem;
   z-index: 3;
-  animation: ncuFadeIn 1s 2.8s;
-  -webkit-animation: ncuFadeIn 1s 2.8s;
+  animation: ncuFadeIn 1s 2.9s;
+  -webkit-animation: ncuFadeIn 1s 2.9s;
   opacity: 0;
 }
 
@@ -173,13 +173,45 @@
   opacity: 0;
 }
 
-
 .guide-list{
-  width: calc(100% - 0.5rem);
   margin: 0 auto;
-  padding-top: 20%;
-  z-index: 9;
+  list-style-type:none;
 }
+
+.guide-list li {
+  display:block;
+  position: absolute;
+  left:50%;
+  top: 10%;
+}
+
+.guide-list li a{
+  display:block;
+  height: 2rem;
+  width: 5.1rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: -1.1rem;
+  margin-top: 1rem;
+}
+
+
+.guide-1{
+  background-image: url("../images/guide-before-1.png")
+}
+
+.guide-2{
+  background-image: url("../images/guide-before-2.png")
+}
+
+.guide-3{
+  background-image: url("../images/guide-before-3.png")
+}
+
+.guide-4{
+  background-image: url("../images/guide-before-4.png")
+}
+/*
 
 .guide-list li{
   height: 5.74rem;
@@ -221,6 +253,7 @@
 .guide-list li:nth-child(4) a{
   background-size: 1.24rem 1.24rem;
 }
+*/
 .start-page-footer{
   color: #88ccfc;
   font-size: 0.32rem;
@@ -351,7 +384,7 @@
 
 @keyframes ncuFadeIn {
   0% {
-    bottom: 58%;
+    bottom: 61%;
     opacity: 0;
   }
   100% {
@@ -362,7 +395,7 @@
 
 @-webkit-keyframes ncuFadeIn {
   0% {
-    bottom: 58%;
+    bottom: 61%;
     opacity: 0;
   }
   100% {

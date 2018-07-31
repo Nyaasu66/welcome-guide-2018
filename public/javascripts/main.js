@@ -16,7 +16,8 @@ var start = function() {
         document.getElementById('cloud-right').style.animation = 'cloudFadeOut 1s 0.37s'
         document.getElementById('cloud-right').style.animationFillMode = 'forwards'
         //菜单生成
-        setTimeout(function() {
+        /*
+                setTimeout(function() {
           var guideUrl = ['1','2','3','4']
           var guideName = ['入校事宜','学业指导','校园文化','乐居香樟']
           for(var i=0; i<5; i++) {
@@ -43,6 +44,7 @@ var start = function() {
             }
           }
         }, 600)
+        */
       }
     })
   }
