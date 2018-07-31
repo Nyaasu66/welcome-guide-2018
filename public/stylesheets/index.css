@@ -187,6 +187,7 @@
   width: calc(100% - 0.5rem);
   margin: 0 auto;
   padding-top: 20%;
+  z-index: 9;
 }
 
 .guide-list li{
@@ -247,8 +248,8 @@
   left: 50%;
   margin-left: -2.3rem;
   z-index: 7;
-  animation: showOpacity 1.4s 5.5s;
-  -webkit-animation: showOpacity 1.4s 5.5s;
+  animation: showOpacity 1.4s 5s;
+  -webkit-animation: showOpacity 1.4s 5s;
   opacity: 0;
 }
 
