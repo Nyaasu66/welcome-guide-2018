@@ -28,7 +28,7 @@ var start = function() {
   $('.open-site').on('tap', function(e) {
     window.open(this.getAttribute('href'))
   })
-	$('#switch-left').on('tap', function(e) {
+	$('#switch-right').on('tap', function(e) {
     e.stopPropagation()
 		console.log('left')
 		if(canChange) {
@@ -36,7 +36,7 @@ var start = function() {
 			changePage(1)
 		}
 	})
-	$('#switch-right').on('tap', function(e) {
+	$('#switch-left').on('tap', function(e) {
     e.stopPropagation()
 		console.log('right')
 		if(canChange) {
