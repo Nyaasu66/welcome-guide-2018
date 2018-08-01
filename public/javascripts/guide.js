@@ -30,7 +30,7 @@ var start = function() {
   })
 	$('#switch-right').on('tap', function(e) {
     e.stopPropagation()
-		console.log('left')
+		console.log('right')
 		if(canChange) {
 			canChange = false
 			changePage(1)

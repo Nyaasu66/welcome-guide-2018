@@ -12,6 +12,7 @@
   background-size:100% 100%;
   -moz-background-size:100% 100%;
   bottom: 0rem;
+  opacity: 0;
 }
 
 .cloud-left{
@@ -19,7 +20,6 @@
   height: 41%;
   animation: cloudFadeIn 1s 1s;
   -webkit-animation: cloudFadeIn 1s 1s;
-  opacity: 0;
   z-index: 6;
 }
 
@@ -31,7 +31,6 @@
   width: 93%;
   animation: cloudFadeIn 1s 1.3s;
   -webkit-animation: cloudFadeIn 1s 1.3s;
-  opacity: 0;
   z-index: 5;
 }
 
@@ -362,24 +361,6 @@
   }
 }
 
-@keyframes showOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes showOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes cloudFadeIn {
   0% {
     bottom: -5rem;
@@ -397,7 +378,7 @@
     opacity: 0;
   }
   100% {
-    bottom: 2.5rem;  
+    bottom: -2.5rem;  
     opacity: 1;
   }
 }

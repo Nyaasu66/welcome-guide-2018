@@ -7,6 +7,10 @@ body{
 .full-page {
   display: flex;
   flex-direction: column;
+  background-image: url(../images/main-bg.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  z-index: 0;
 }
 
 .page-content-1, .page-content-2, .page-content-3, .page-content-4{
@@ -22,6 +26,8 @@ body{
   position: absolute;
   bottom: 4.5%;
   z-index: 7;
+  opacity: 0;
+  animation: showOpacity 1.2s 0.3s forwards;
 }
 
 .switch-left {
@@ -33,3 +39,27 @@ body{
   background-image: url(../images/switch-right.png);
   right: 5%;
 }
+
+.cloud{
+  background-repeat: no-repeat;  
+  position: absolute;
+  width: 100%;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  bottom: -2.5rem;
+}
+
+.cloud-left{
+  background-image: url(../images/cloud-left.png);
+  height: 41%;
+  z-index: 6;
+}
+
+.cloud-right{
+  background-image: url(../images/cloud-right.png);
+  left: 7%; 
+  height: 40.5%;
+  width: 93%;
+  z-index: 5;
+}
+
