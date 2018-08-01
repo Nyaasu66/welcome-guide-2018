@@ -146,7 +146,6 @@
   left: 50%;
   margin-left: -2.1rem;
   z-index: 7;
-  transition: opacity 0.6s;
   animation: showOpacity 0.8s 3.7s;
   -webkit-animation: showOpacity 0.8s 3.7s;
   opacity: 0;
@@ -167,10 +166,10 @@
   z-index: 7;
   border-radius: 2px;
   box-shadow: 1px 2px 4px #d0d0d0;
-  transition: opacity 0.6s;
-  animation: showOpacity 0.4s 4.3s;
-  -webkit-animation: showOpacity 0.4s 4.3s;
+  animation: showOpacity 0.4s 0.3s;
+  -webkit-animation: showOpacity 0.4s 0.3s;
   opacity: 0;
+  display: none;
 }
 
 .guide-list{
@@ -341,11 +340,6 @@
   -webkit-animation: showOpacity 1.4s 5s;
   opacity: 0;
 }
-
-.img-disapr{
-  transition: opacity 0.6s;
-}
-
 
 @media only screen and (min-width: 320px) {
   .start-page .img_mask{
