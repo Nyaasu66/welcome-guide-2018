@@ -236,6 +236,10 @@
   font-family: DroidSansFallback;
 }
 
+.guide-desc-left-2{
+  left: 2rem;
+}
+
 .guide-title-right{
   font-size: 0.8rem;
   left: 2.2rem;
