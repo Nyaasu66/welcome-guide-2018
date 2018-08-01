@@ -493,9 +493,9 @@ body{
 	height: 100%;
   border-top: 2px dotted #bde6d4;
 }
-.degree-list li div:first-child, .degree-list li div:nth-child(2){
+/*.degree-list li div:first-child, .degree-list li div:nth-child(2){
   
-}
+}*/
 .degree-list li:first-child{
   background-color: #7491cd;
   color: #fff;
