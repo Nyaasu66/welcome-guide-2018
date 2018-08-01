@@ -28,7 +28,7 @@ var start = function() {
   $('.open-site').on('tap', function(e) {
     window.open(this.getAttribute('href'))
   })
-	$('#page-change').on('swipeleft', function(e) {
+	$('#switch-left').on('tap', function(e) {
     e.stopPropagation()
 		console.log('left')
 		if(canChange) {
@@ -36,7 +36,7 @@ var start = function() {
 			changePage(1)
 		}
 	})
-	$('#page-change').on('swiperight', function(e) {
+	$('#switch-right').on('tap', function(e) {
     e.stopPropagation()
 		console.log('right')
 		if(canChange) {
@@ -85,7 +85,7 @@ var start = function() {
 					pageChangeLi[nowIndex].className = ''
 					pageChangeLi[6].className = 'like-page'
 					pageChangeLi[2].className = 'now-page'
-					pageChangeUl.style.transition = '0.6s'
+					pageChangeUl.style.transition = '0.1s'
 					pageChangeUl.style.left = (pageWidth / 2) - (nowIndex + 1.5) * parseFloat(pageChangeUl.getElementsByTagName('li')[0].style.width) * unit + 'px'
 				}
 				else{
@@ -95,7 +95,7 @@ var start = function() {
 					location.hash = '#' + hash
 					pageChangeLi[nowIndex].className = ''
 					pageChangeLi[nowIndex+1].className = 'now-page'
-					pageChangeUl.style.transition = '0.6s'
+					pageChangeUl.style.transition = '0.1s'
 					pageChangeUl.style.left = (pageWidth / 2) - (nowIndex + 1.5) * parseFloat(pageChangeUl.getElementsByTagName('li')[0].style.width) * unit + 'px'
 				} 
 				break
@@ -108,7 +108,7 @@ var start = function() {
 					pageChangeLi[nowIndex].className = ''
 					pageChangeLi[1].className = 'like-page'
 					pageChangeLi[5].className = 'now-page'
-					pageChangeUl.style.transition = '0.6s'
+					pageChangeUl.style.transition = '0.1s'
 					pageChangeUl.style.left = (pageWidth / 2) - (nowIndex - 0.5) * parseFloat(pageChangeUl.getElementsByTagName('li')[0].style.width) * unit + 'px'
 				}
 				else{
@@ -118,7 +118,7 @@ var start = function() {
 					location.hash = '#' + hash
 					pageChangeLi[nowIndex].className = ''
 					pageChangeLi[nowIndex-1].className = 'now-page'
-					pageChangeUl.style.transition = '0.6s'
+					pageChangeUl.style.transition = '0.1s'
 					pageChangeUl.style.left = (pageWidth / 2) - (nowIndex - 0.5) * parseFloat(pageChangeUl.getElementsByTagName('li')[0].style.width) * unit + 'px'
 				} 
 				break
