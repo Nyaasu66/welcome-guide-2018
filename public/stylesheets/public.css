@@ -41,10 +41,6 @@ a::-webkit-selection{
 }
 
 
-/*防止被动Touch事件使Chrome报错
-  去掉后还会出现页面显示bug*/
-* { touch-action: none; }
-
 @keyframes showOpacity {
   0% {
     opacity: 0;

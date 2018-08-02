@@ -1,3 +1,5 @@
+* { touch-action: none; }
+
 .start-page{
   background-image: url(../images/main-bg.png);
   background-repeat: repeat-x;
