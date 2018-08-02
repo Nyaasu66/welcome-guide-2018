@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .swipe {
+      overflow: hidden;
+      visibility: hidden;
+      position: relative;
+    }
+
+    .swipe-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .swipe-wrap>li {
+      float: left;
+      width: 3rem;
+      height: 30rem;
+      position: relative;
+    }
+  </style>
+  <script src="./swipe.min.js"></script>
+</head>
+
+<body>
+  <!--swipe需要的是下面这样的结构，而不是下面这样的标签，意味着标签名称可以随意-->
+  <div id='slider' class='swipe'>
+    <ul class='swipe-wrap'>
+      <li class="wrap" page="1" list="2" style="background-image: url(./public/images/list-1-dormi.png);background-size: 100% 100%"></li>
+      <li class="wrap" page="1" list="3" style="background-image: url(./public/images/list-1-dormi.png);background-size: 100% 100%"></li>
+      <li class="wrap" page="1" list="4" style="background-image: url(./public/images/list-1-dormi.png);background-size: 100% 100%"></li>
+      <li class="wrap" page="1" list="5" style="background-image: url(./public/images/list-1-dormi.png); background-size: 100% 100%"></li>
+    </ul>
+  </div>
+  <script>
+    /*
+    Swipe可以扩展可选参数-通过设置对象的键值对:
+        startSlide Integer (默认:0) - Swipe开始的索引
+        speed Integer (默认:300) - 前进和后台的速度，单位毫秒.
+        auto Integer - 自动滑动 (time in milliseconds between slides)
+        continuous Boolean (默认:true) -是否可以循环播放（注：我设置为false好像也是循环的）
+        disableScroll Boolean (默认:false) - 停止触摸滑动
+        stopPropagation Boolean (默认:false) -停止事件传播
+        callback Function - 回调函数，可以获取到滑动中图片的索引.
+        transitionEnd Function - 滑动的过渡动画过后会执行的函数
+    * */
+    window.mySwipe = new Swipe(document.getElementById('slider'), {
+      startSlide: 0,
+      speed: 400,
+      auto: 3000,
+      continuous: true,
+      disableScroll: false,
+      stopPropagation: false,
+      transitionEnd: function (index, elem) { }
+    });
+  </script>
+</body>
+
+</html>

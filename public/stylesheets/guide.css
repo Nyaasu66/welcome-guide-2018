@@ -69,14 +69,73 @@ body {
   background-repeat: no-repeat;
 }
 
+.list-1 {
+  position: relative;
+  margin-top: 4.1rem;
+  margin-left: 1.15rem;
+}
+
 .list-1 li {
-  width: 32.33333%;
-  height: 2.3rem;
   background-size: 100% 100%;
 }
 
+#list-1-food {
+  height: 2.8rem;
+  width: 4.15rem;
+}
+
+#list-1-dormi{
+  height: 2.8rem;
+  width: 4.1rem;
+  margin-left: 0.3rem;
+}
+
+#list-1-trans{
+  margin-top: 0.6rem;
+  height: 2.8rem;
+  width: 2.5rem;
+}
+
+#list-1-bank{
+  margin-top: 0.6rem;
+  margin-left: 0.35rem;
+  height: 2.8rem;
+  width: 3.1rem;
+}
+
+#list-1-express{
+  margin-top: 0.6rem;
+  margin-left: 0.35rem;
+  height: 2.8rem;
+  width: 2.25rem;
+}
+
+.list-2 {
+  position: relative;
+  margin-top: 4.1rem;
+  margin-left: 1.15rem;
+}
+
 .list-2 li {
-  width: 35%;
-  height: 3.6rem;
   background-size: 100% 100%;
+}
+
+#list-2-exprmtl{
+  height: 2.8rem;
+  width: 4.15rem;
+}
+
+#list-2-transfer{
+  height: 2.8rem;
+  width: 4.15rem;
+}
+
+#list-2-scholar{
+  height: 2.8rem;
+  width: 4.15rem;
+}
+
+#list-2-dual{
+  height: 2.8rem;
+  width: 4.15rem;
 }
