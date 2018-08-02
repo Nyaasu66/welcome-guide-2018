@@ -5,6 +5,19 @@ var start = function () {
 		canChange = true
 	pageChangeUl.getElementsByTagName('li')[hash + 1].className = 'now-page'
 	document.getElementById('page-content-' + hash).style.display = 'block'
+	$('.page-content-list li').on('touchstart', function (e) {
+		this.className = 'data-image hover'
+	})
+	$('.page-content-list li').on('touchend', function (e) {
+		this.className = 'data-image'
+	})
+	$('.page-content-list li').on('tap', function (e) {
+		if (this.getAttribute('disabled')) {
+			window.location.href = this.getAttribute('to')
+			return
+		}
+		showMengBan(parseInt(this.getAttribute('page')), parseInt(this.getAttribute('list')))
+	})
 	$('#page-content-3 .page-content-title:first').on('tap', function (e) {
 		showMengBan(parseInt(this.getAttribute('page')), parseInt(this.getAttribute('list')))
 	})
@@ -27,6 +40,11 @@ var start = function () {
 			changePage(-1)
 		}
 	})
+
+  var dataImage = document.getElementsByClassName('data-image');
+  for(var i=0; i<dataImage.length; i++) {
+    dataImage[i].style.backgroundImage = 'url(' + dataImage[i].getAttribute('data-src') + ')';
+  }
 
 	function jumpPage() {
 		canChange = true
