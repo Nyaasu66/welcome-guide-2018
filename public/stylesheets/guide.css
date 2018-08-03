@@ -158,38 +158,22 @@ body {
 }
 
 .list-3 {
-  margin-top: 4rem;
+  margin-top: 3.6rem;
 }
 
-.team-1 li {
+.school-teams li {
   height: 2.05rem;
   width: 2.05rem;
   margin: 0.2rem 0.2rem 0.7rem 0.1rem;
 }
 
-.team-1 li div {
+.school-teams li div {
   text-align: center;
-  margin-top: 2.03rem;
+  margin-top: 2.06rem;
   transform: scale(0.8);
   font-size: 0.34rem;
   font-family: DroidSansFallback;
   color: #151515;
-
-
-}
-
-.panel-title a{
-  font-size: 0.5rem;
-  width: 7.9rem;
-}
-
-.panel-title a::after{
-  text-align: center;
-  transition: all 0.5s ease 0s;
-}
-
-.ui-collapsible-content {
-  padding:0 0.1rem;
 }
 
 .scoll-container{
@@ -198,18 +182,7 @@ body {
   height: 6.4rem;
 }
 
-.ui-page-theme-a .ui-body-inherit {
-  background-color: transparent !important;
-  border-color: transparent !important;
-}
-
-.page-title-4{
-  height: 2.1rem;
-  width: 4.5rem;
-  left: 39%;
-  top: 6%;
-}
-
+/*替换初始jQuery-Mobile样式*/
 .ui-page-theme-a{
   text-shadow: 0 0 0 transparent !important;
 }
@@ -232,3 +205,31 @@ body {
 .ui-page-theme-a .ui-body-inherit {
   text-shadow: 0 0 0 transparent !important;
 }
+
+.ui-page-theme-a .ui-body-inherit {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.panel-title a{
+  font-size: 0.5rem;
+  width: 7.9rem;
+}
+
+.panel-title a::after{
+  text-align: center;
+  transition: all 0.5s ease 0s;
+}
+
+.ui-collapsible-content {
+  padding:0 0.1rem;
+}
+
+
+.page-title-4{
+  height: 2.1rem;
+  width: 4.5rem;
+  left: 39%;
+  top: 6%;
+}
+
