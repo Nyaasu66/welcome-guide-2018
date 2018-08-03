@@ -258,7 +258,7 @@ body {
   padding-top: 4.25rem;
 }
 
-.p4-card-1 {
+#p4-card-1 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -267,7 +267,7 @@ body {
   margin-left: 0.9rem;
 }
 
-.p4-card-2 {
+#p4-card-2 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -276,7 +276,7 @@ body {
   width: 9rem;
   margin-left: 0.9rem;
 }
-.p4-more {
+#p4-more {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
