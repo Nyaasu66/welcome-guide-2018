@@ -158,14 +158,13 @@ body {
 }
 
 .list-3 {
-  margin: 0.18rem 0.85rem;
-  padding-top: 4.8rem;
+  margin-top: 4rem;
 }
 
-.list-3 li {
-  height: 3.5rem;
-  width: 3.18rem;
-  margin: 0.2rem 0.25rem;
+.team-1 li {
+  height: 2rem;
+  width: 2rem;
+  margin: 0.1rem;
 }
 
 .panel-title a{
@@ -174,9 +173,29 @@ body {
 }
 
 .panel-title a::after{
-  width: 25px;
-  height: 25px;
   text-align: center;
   transition: all 0.5s ease 0s;
 }
 
+.ui-collapsible-content {
+  padding:0 0.1rem;
+}
+
+.scoll-container{
+  overflow-y:scroll;
+  width: 9rem;
+  height: 5rem;
+  scrollbar-face-color: #fcfcfc;
+  scrollbar-highlight-color: #ffffff;
+  scrollbar-shadow-color: #fcfcfc;
+  scrollbar-3dlight-color: #fcfcfc;
+  scrollbar-arrow-color: #ffffff;
+  scrollbar-track-color: #fcfcfc;
+  scrollbar-darkshadow-color: #ffffff;
+  scrollbar-base-color: #fcfcfc
+}
+
+.ui-page-theme-a .ui-body-inherit {
+  background-color: transparent;
+  border-color: transparent;
+}
