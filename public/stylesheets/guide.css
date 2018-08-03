@@ -20,7 +20,7 @@ body {
 .page-content{
   margin: 0 auto;
   flex: 1;
-  overflow: scroll;
+  z-index: 4;
 }
 
 .page-content-1, .page-content-2, .page-content-3, .page-content-4 {
@@ -63,7 +63,7 @@ body {
 .cloud-left {
   background-image: url(../images/cloud-left.png);
   height: 41%;
-  z-index: 6;
+  z-index: 1;
 }
 
 .cloud-right {
@@ -71,7 +71,7 @@ body {
   left: 7%;
   height: 40.5%;
   width: 93%;
-  z-index: 5;
+  z-index: 0;
 }
 
 .page-content-list li {
@@ -162,14 +162,14 @@ body {
 }
 
 .team-1 li {
-  height: 2rem;
-  width: 2rem;
-  margin: 0.1rem;
+  height: 2.1rem;
+  width: 2.1rem;
+  margin: 0.2rem 0.2rem 0.7rem 0.03rem;
 }
 
 .panel-title a{
   font-size: 0.5rem;
-  width: 7.5rem;
+  width: 7.9rem;
 }
 
 .panel-title a::after{
@@ -183,8 +183,8 @@ body {
 
 .scoll-container{
   overflow-y:scroll;
-  width: 9rem;
-  height: 5rem;
+  width: 9.5rem;
+  height: 6.4rem;
   scrollbar-face-color: #fcfcfc;
   scrollbar-highlight-color: #ffffff;
   scrollbar-shadow-color: #fcfcfc;
@@ -198,4 +198,11 @@ body {
 .ui-page-theme-a .ui-body-inherit {
   background-color: transparent;
   border-color: transparent;
+}
+
+.page-title-4{
+  height: 2.2rem;
+  width: 3.6rem;
+  left: 37%;
+  top: 6%;
 }
