@@ -91,7 +91,7 @@ body {
 .page-title-1{
   height: 2.2rem;
   width: 3.5rem;
-  left: 38%;
+  left: 36%;
   top: 6%
 }
 
@@ -212,8 +212,8 @@ body {
 }
 
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
-  width: 0.57rem;
-  height: 0.57rem;
+  width: 0.62rem;
+  height: 0.62rem;
   background-size: 70% 70%;
 }
 
@@ -232,10 +232,64 @@ body {
 }
 
 
-.page-title-4{
+.page-title-4 {
   height: 2.1rem;
   width: 4.5rem;
-  left: 39%;
-  top: 6%;
+  left: 34%;
+  top: 7%;
 }
 
+.q-a {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  height: 0.7rem;
+  width: 1.4rem;
+  position: fixed;
+  top: 20%;
+  left: -1%;
+  z-index: 2
+}
+
+.list-4 {
+  padding-top: 4.25rem;
+}
+
+.p4-card-1 {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  height: 3.7rem;
+  width: 9rem;
+  margin-left: 0.9rem;
+}
+
+.p4-card-2 {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  height: 3.7rem;
+  width: 9rem;
+  margin-left: 0.9rem;
+}
+.p4-more {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  height: 0.7rem;
+  width: 1.4rem;
+ }
+.p4-app {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  height: 0.7rem;
+  width: 1.4rem;
+}
+.p4-follow {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  height: 0.7rem;
+  width: 1.4rem;
+}
