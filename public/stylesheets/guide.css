@@ -190,16 +190,19 @@ body {
 .ui-page-theme-a .ui-btn {
   background-color: transparent !important;
   border-color: transparent !important;
+  text-shadow: 0 0 0 !important;
 }
 
 .ui-page-theme-a .ui-btn:hover {
   background-color: transparent !important;
   border-color: transparent !important;
+  text-shadow: 0 0 0 !important;
 }
 
 .ui-page-theme-a .ui-btn:focus {
   box-shadow: 0 0 0 !important;
   -webkit-box-shadow: 0 0 0 !important;
+  text-shadow: 0 0 0 !important;
 }
 
 .ui-page-theme-a .ui-body-inherit {
