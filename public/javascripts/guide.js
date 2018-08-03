@@ -118,13 +118,6 @@ var start = function () {
 		hideMengBan()
 	})
 
-	var slider =
-  Swipe(document.getElementById('slider'), {
-    auto: 3000,
-    continuous: true,
-	callback: function(pos) {
-	}
-  });
 
 
 }

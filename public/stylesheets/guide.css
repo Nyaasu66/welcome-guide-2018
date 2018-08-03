@@ -162,9 +162,9 @@ body {
 }
 
 .school-teams li {
-  height: 2.05rem;
-  width: 2.05rem;
-  margin: 0.2rem 0.2rem 0.7rem 0.1rem;
+  height: 2.09rem;
+  width: 2.09rem;
+  margin: 0.2rem 0.2rem 0.7rem 0.05rem;
 }
 
 .school-teams li div {
@@ -209,6 +209,12 @@ body {
 .ui-page-theme-a .ui-body-inherit {
   background-color: transparent !important;
   border-color: transparent !important;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+  width: 0.57rem;
+  height: 0.57rem;
+  background-size: 70% 70%;
 }
 
 .panel-title a{
