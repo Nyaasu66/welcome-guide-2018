@@ -18,9 +18,6 @@ var start = function () {
 		}
 		showMengBan(parseInt(this.getAttribute('page')), parseInt(this.getAttribute('list')))
 	})
-	$('#page-content-3 .page-content-title:first').on('tap', function (e) {
-		showMengBan(parseInt(this.getAttribute('page')), parseInt(this.getAttribute('list')))
-	})
 	$('.open-site').on('tap', function (e) {
 		window.open(this.getAttribute('href'))
 	})
@@ -40,6 +37,25 @@ var start = function () {
 			changePage(-1)
 		}
 	})
+	
+	$('#switch-left').on('tap', function () {
+		jumpPage()
+		console.log('left')
+		if (canChange) {
+			canChange = false
+			changePage(-1)
+		}
+	})
+
+	$('#p4-app').on('tap', 	function () { 
+    var ua = window.navigator.userAgent.toLowerCase(); 
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') { 
+        alert("微信浏览器"); 
+    } else { 
+        alert("不是微信浏览器"); 
+    } 
+})
+
 
   var dataImage = document.getElementsByClassName('data-image');
   for(var i=0; i<dataImage.length; i++) {
@@ -117,8 +133,6 @@ var start = function () {
 	$('#close-btn').on('touchend', function () {
 		hideMengBan()
 	})
-
-
 
 }
 
