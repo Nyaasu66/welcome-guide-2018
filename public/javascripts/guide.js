@@ -42,9 +42,15 @@ var start = function () {
 	$('#p4-app').on('tap', 	function () { 
     var ua = window.navigator.userAgent.toLowerCase(); 
     if (ua.match(/MicroMessenger/i) == 'micromessenger') { 
-        alert("微信浏览器"); 
-    } else { 
-        alert("不是微信浏览器"); 
+			document.getElementById('mengban-weixin').style.display = 'flex'; 
+			function hideWXMengBan() {
+				document.getElementById('mengban-weixin').style.display = 'none'
+			}
+			$('#close-btn-weixin').on('touchend', function () {
+				hideWXMengBan()
+			})
+    } else {
+			location.href='http://incu.ncuos.com/'; 
     } 
 })
 

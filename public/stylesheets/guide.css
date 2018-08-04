@@ -258,6 +258,8 @@ body {
 
 .list-4 {
   padding-top: 3.8rem;
+  font-size: 0.32rem;
+  line-height: 0.45rem;
 }
 
 .list-4 li {
@@ -265,7 +267,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 
 #p4-card-1 {
   background-repeat: no-repeat;
@@ -276,6 +277,18 @@ body {
   margin-left: 0.9rem;
 }
 
+#p4-card-1-container{
+  overflow-y: scroll;
+  width: 7.9rem;
+  height: 2.8rem;
+  margin: 0.6rem;
+}
+
+#p4-card-1-container p span {
+  font-weight: 700;
+}
+
+
 #p4-card-2 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -285,6 +298,18 @@ body {
   width: 9rem;
   margin-left: 0.9rem;
 }
+
+#p4-card-2-container{
+  overflow-y: scroll;
+  width: 7.9rem;
+  height: 2.8rem;
+  margin: 0.6rem;
+}
+
+#p4-card-2-container p span {
+  font-weight: 700;
+}
+
 #p4-more {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -313,6 +338,51 @@ body {
   position: fixed;
   bottom: 0.9rem;
   right: 33%;
+}
+
+#mengban-weixin{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 9;
+}
+
+#close-btn-weixin{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(../images/close-btn.png);
+  background-repeat: no-repeat;
+  background-size: 0.9rem 0.9rem;
+  background-position: 5% 26%;
+  z-index: -1;
+}
+
+#word-content-weixin{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  position: fixed;
+  top: 29%;
+  left: 9%;
+}
+
+
+#arrow-weixin{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 18%;
+  height: 35%;
+  display: flex;
+  position: fixed;
+  top: -3%;
+  left: 76%;
 }
 
 .mengban{
