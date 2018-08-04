@@ -38,14 +38,6 @@ var start = function () {
 		}
 	})
 	
-	$('#switch-left').on('tap', function () {
-		jumpPage()
-		console.log('left')
-		if (canChange) {
-			canChange = false
-			changePage(-1)
-		}
-	})
 
 	$('#p4-app').on('tap', 	function () { 
     var ua = window.navigator.userAgent.toLowerCase(); 

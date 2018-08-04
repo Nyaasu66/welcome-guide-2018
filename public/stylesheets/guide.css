@@ -62,14 +62,14 @@ body {
 
 .cloud-left {
   background-image: url(../images/cloud-left.png);
-  height: 41%;
+  height: 39%;
   z-index: 1;
 }
 
 .cloud-right {
   background-image: url(../images/cloud-right.png);
   left: 7%;
-  height: 40.5%;
+  height: 38.5%;
   width: 93%;
   z-index: 0;
 }
@@ -251,7 +251,7 @@ body {
   height: 0.7rem;
   width: 1.4rem;
   position: fixed;
-  top: 18%;
+  top: 3rem;
   left: -1%;
   z-index: 2
 }
