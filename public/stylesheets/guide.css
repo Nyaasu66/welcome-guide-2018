@@ -371,16 +371,6 @@ body {
   position: fixed;
   top: 29%;
   left: 9%;
-  font-size: 0.44rem;
-  font-weight: 700;
-  line-height: 0.7rem;
-}
-
-#wx-container {
-  width: 5rem;
-  height: 2.8rem;
-  margin-left: 2.4rem;
-  margin-top: 1.2rem;
 }
 
 #arrow-weixin{
