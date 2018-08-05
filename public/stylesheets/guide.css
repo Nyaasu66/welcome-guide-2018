@@ -216,12 +216,6 @@ body {
   border-color: transparent !important;
 }
 
-.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
-  width: 0.62rem;
-  height: 0.62rem;
-  background-size: 65% 65%;
-  background-position: center;
-}
 
 .panel-title-1 {
   background-image: url('../images/team-name-bg-1.png');
