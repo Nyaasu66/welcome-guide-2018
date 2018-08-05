@@ -216,6 +216,9 @@ body {
   border-color: transparent !important;
 }
 
+.ui-btn-icon-notext:after, .ui-btn-icon-left:after, .ui-btn-icon-right:after {
+  margin-top: -0.31rem;
+}
 
 .panel-title-1 {
   background-image: url('../images/team-name-bg-1.png');
