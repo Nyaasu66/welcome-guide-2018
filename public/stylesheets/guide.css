@@ -219,7 +219,24 @@ body {
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
   width: 0.62rem;
   height: 0.62rem;
-  background-size: 70% 70%;
+  background-size: 65% 65%;
+  background-position: center;
+}
+
+.panel-title-1 {
+  background-image: url('../images/team-name-bg-1.png');
+  background-size: 10.5rem 6.5rem;
+  background-repeat: no-repeat;
+  background-position-y: -2.2rem;
+  background-position-x: -0.6rem;
+}
+
+.panel-title-2 {
+  background-image: url('../images/team-name-bg-2.png');
+  background-size: 10.5rem 6.5rem;
+  background-repeat: no-repeat;
+  background-position-y: -2.2rem;
+  background-position-x: -0.6rem;
 }
 
 .panel-title a{
