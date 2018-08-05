@@ -222,17 +222,17 @@ body {
 
 .panel-title-1 {
   background-image: url('../images/team-name-bg-1.png');
-  background-size: 10.5rem 6.5rem;
+  background-size: 10.5rem 5.6rem;
   background-repeat: no-repeat;
-  background-position-y: -2.28rem;
+  background-position-y: -1.91rem;
   background-position-x: -0.6rem;
 }
 
 .panel-title-2 {
   background-image: url('../images/team-name-bg-2.png');
-  background-size: 10.5rem 6.5rem;
+  background-size: 10.5rem 5.6rem;
   background-repeat: no-repeat;
-  background-position-y: -2.28rem;
+  background-position-y: -1.91rem;
   background-position-x: -0.6rem;
 }
 
