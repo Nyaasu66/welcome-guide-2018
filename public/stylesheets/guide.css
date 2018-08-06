@@ -217,28 +217,30 @@ body {
 }
 
 .ui-btn-icon-notext:after, .ui-btn-icon-left:after, .ui-btn-icon-right:after {
-  margin-top: -0.33rem;
+  display: none;
 }
+
 
 .panel-title-1 {
   background-image: url('../images/team-name-bg-1.png');
-  background-size: 10.5rem 6rem;
+  background-size: 9rem 0.48rem;
   background-repeat: no-repeat;
-  background-position-y: -2.04rem;
-  background-position-x: -0.6rem;
+  background-position-y: 0.6rem;
+  background-position-x: 0.3rem;
 }
 
 .panel-title-2 {
   background-image: url('../images/team-name-bg-2.png');
-  background-size: 10.5rem 6rem;
+  background-size: 9rem 0.48rem;
   background-repeat: no-repeat;
-  background-position-y: -2.04rem;
-  background-position-x: -0.6rem;
+  background-position-y: 0.6rem;
+  background-position-x: 0.3rem;
 }
 
 .panel-title a{
   font-size: 0.5rem;
   width: 7.9rem;
+  color: transparent !important;
 }
 
 .panel-title a::after{
