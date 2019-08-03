@@ -1,21 +1,49 @@
-## 最新demo地址
+# 2018南昌大学新生迎新指南
 
-[迎新指南](http://welcome.nyaasu.top/)
+## demo演示地址  
+[点击链接](https://2018s.nyaasu.top)  
 
 
-# 前端开发环境
+## 开发环境  
+> 前后端：原生js + Node.js  
+> 部署：Docker
 
-> node + js
+## 部署
 
-## 安装及操作
+```bash
+$ git clone ssh://git@git.ncuos.com:8082/Nyaasu/welcome-guide-2019.git
 
-```  
+$ cnpm install
 
+# git pull
+
+$ docker-compose build
+
+$ docker-compose up -d
+
+# 随后，用nginx反向代理本地1218端口即可
+```
+
+### （测试备用）如果不使用 Docker 而使用 pm2 部署
+
+```bash
+$ cnpm install -g pm2
+
+$ sudo pm2 start ./bin/www --name "2019welcome" --watch
+# 此时需要反向代理的端口为：7777
+
+# 查看进程状态
+pm2 list  
+```
+
+## 本地开发
+
+``` bash
 # 安装依赖
-npm install
+$ cnpm install
 
-# 在 localhost:1217 运行一个自动刷新的web服务用于边写边调
-npm start
+# 在 localhost:7777 运行一个自动刷新的web服务用于边写边调
+$ npm start
 
 ```
   
@@ -48,64 +76,10 @@ npm start
 |   |   +-- index.css  scss编译后文件
 |   |   | 
 |   |   +-- *.svg  图片资源
+|
+------------------------
 ```  
   
-## 部署  
-
-* 使用Apache反向代理 + Node.js 部署  
-
-```
-cd /data/guide
-# 从远程仓库获取分支 
-git pull origin master
-# 安装依赖
-cnpm install
-```  
-安装pm2进程守护程序,代码即可在后台启动 (pm2 具有性能监控、自动重启、负载均衡等功能)
-
-```  
-# 全局安装
-npm install -g pm2
-# 启动进程
-pm2 start ./bin/www --watch
-# 查看进程状态
-pm2 list  
-```
-
-接着在Apache (httpd2.4)
-配置httpd.conf文件，在文件后添加
-```
-LoadModule proxy_module modules/mod_proxy.so
-LoadModule proxy_http_module modules/mod_proxy_http.so
-LoadModule proxy_ftp_module modules/mod_proxy_ftp.so
-LoadModule proxy_connect_module modules/mod_proxy_connect.so
-
-
-<VirtualHost *:80>
-ServerName welcome.nyaasu.top
- 
-ProxyRequests off
- 
-<Proxy *>
-Order deny,allow
-Allow from all
-</Proxy>
- 
-<Location />
-ProxyPass http://localhost:1217/
-ProxyPassReverse http://localhost:1217/
-</Location>
-</VirtualHost>
-```
-然后重启服务，即可实现访问
-
-```
-service httpd stop
-service httpd start
-```
-
-注：使用Ubuntu的apt-get安装的是Apache2，不是httpd2.4. 在CentOS上可通过``` yum install httpd ```安装，而Ubuntu上可以通过在官网上下载源码，或者使用Oneinstack一键安装工具安装。
-
 参考链接：
 
 1.[Apache设置反向代理访问 NodeJs 网站](https://blog.csdn.net/cen_cs/article/details/50663175)
@@ -116,14 +90,6 @@ service httpd start
 
 4.[OneinStack - 一键PHP/JAVA安装工具](https://oneinstack.com/)
 
-
-* 使用Docker部署（2017的方法，可能属个人原因，经部署跑不起来）  
-
-```bash
-git pull
-docker-compose build
-docker-compose up -d
-```  
 
 ### 测试-Chrome模拟设备  
   
