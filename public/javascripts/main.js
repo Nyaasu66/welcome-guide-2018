@@ -5,7 +5,7 @@ var start = function () {
   //生成guide-list
   var startBtn = document.getElementById('start-page-btn')
   var startBtnOnce = true
-  startBtn.addEventListener('touchend', function () {
+  var openGuideMenu = function () {
     if (startBtnOnce) {
       startBtnOnce = false
       //元素消失
@@ -17,6 +17,13 @@ var start = function () {
       document.getElementById('cloud-right').style.animationFillMode = 'forwards'
       //菜单生成
       menuAppear()
+    }
+  }
+  startBtn.addEventListener('click', openGuideMenu)
+  startBtn.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter' || event.key === ' ' || event.keyCode === 13 || event.keyCode === 32) {
+      event.preventDefault()
+      startBtn.click()
     }
   })
 
