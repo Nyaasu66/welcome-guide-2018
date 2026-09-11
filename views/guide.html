@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
   <title>迎新指南</title>
+  <script type="text/javascript" src="javascripts/viewport-adapter.js"></script>
   <script type="text/javascript" src="javascripts/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/jquery.mobile-1.4.5.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80324378-12"></script>
   <script>
@@ -16,19 +16,26 @@
     gtag('js', new Date());
     gtag('config', 'UA-80324378-12');
   </script>
-  <link href="https://cdn.bootcss.com/jquery-mobile/1.4.5/jquery.mobile.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheets/guide.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/public.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/viewport-adapter.css">
   <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 
 <body>
+  <div class="adaptive-shell">
+    <aside class="project-intro" aria-labelledby="project-title">
+      <h1 id="project-title">南昌大学迎新指南 2018</h1>
+    </aside>
+    <main class="mobile-preview">
+      <div class="preview-frame">
+        <div class="mobile-viewport" id="mobile-viewport">
   <div class="container full-page" id="container">
     <div class="page-change" id="page-change">
       <div class="cloud cloud-left" id="cloud-left"></div>
       <div class="cloud cloud-right" id="cloud-right"></div>
-      <div class="switch-btn switch-left" id="switch-left"></div>
-      <div class="switch-btn switch-right" id="switch-right"></div>
+      <div class="switch-btn switch-left" id="switch-left" role="button" tabindex="0" aria-label="上一页"></div>
+      <div class="switch-btn switch-right" id="switch-right" role="button" tabindex="0" aria-label="下一页"></div>
       <ul id="page-change-ul">
         <li index="0"><a href=""></a></li>
         <li index="1"><a href=""></a></li>
@@ -62,13 +69,13 @@
           <div class="clear"></div>
         </ul>
       </div>
-      <div class="page-content-3 list-3" id="page-content-3">
+      <div class="page-content-3" id="page-content-3">
         <div class="page-title page-title-3 data-image" data-src="/images/page-title-3.png"></div>
-        <div data-role="collapsibleset" class="list-3">
-          <div data-role="collapsible" data-collapsed="false">
-            <h3 class="panel-title panel-title-1">学生组织</h3>
-            <div class="scoll-container">
-            <ul class="page-content-list school-teams">
+        <div class="organization-panels">
+          <section class="organization-panel">
+            <button class="panel-title panel-title-1" type="button" aria-expanded="true" aria-controls="student-organizations">学生组织</button>
+            <div class="organization-scroll" id="student-organizations" role="region" tabindex="0" aria-label="学生组织列表">
+              <ul class="page-content-list school-teams">
               <li class="data-image" page="3" list="1" data-src="./images/t-01.png"><div>南昌大学<br/>家园工作室</div></li>
               <li class="data-image" page="3" list="2" data-src="./images/t-02.png"><div>南昌大学<br/>大学生记者团</div></li>
               <li class="data-image" page="3" list="3" data-src="./images/t-03.png"><div>南昌大学<br/>官方团队</div></li>
@@ -101,13 +108,12 @@
               <li class="data-image" page="3" list="30" data-src="./images/t-30.png"><div>南昌大学<br/>艺术团</div></li>
               <li class="data-image" page="3" list="31" data-src="./images/t-31.png"><div>南昌大学<br/>英文广播电台</div></li>
               <li class="data-image" page="3" list="32" data-src="./images/t-32.png"><div>南昌大学助学<br/>服务联合会</div></li>
-              <div class="clear"></div>
-            </ul>
-          </div>
-          </div>
-          <div data-role="collapsible">
-              <h3 class="panel-title panel-title-2">其他</h3>
-              <div class="scoll-container">
+              </ul>
+            </div>
+          </section>
+          <section class="organization-panel">
+            <button class="panel-title panel-title-2" type="button" aria-expanded="false" aria-controls="other-organizations">其他组织</button>
+            <div class="organization-scroll" id="other-organizations" role="region" tabindex="0" aria-label="其他组织列表" hidden>
               <ul class="page-content-list school-teams">
                   <li class="data-image" page="4" list="1" data-src="./images/x-1.png"><div>南昌大学<br/>抱欢相声社</div></li>
                   <li class="data-image" page="4" list="2" data-src="./images/x-2.png"><div>南昌大学<br/>节南山诗社</div></li>
@@ -115,10 +121,9 @@
                   <li class="data-image" page="4" list="4" data-src="./images/x-4.png"><div>SKYwalker<br/>轮滑社</div></li>
                   <li class="data-image" page="4" list="5" data-src="./images/x-5.png"><div>南昌大学<br/>粤语协会</div></li>
                   <li class="data-image" page="4" list="6" data-src="./images/x-6.png"><div>Crazy Angel<br/>轮滑社</div></li>
-                <div class="clear"></div>
-              </div>
               </ul>
             </div>
+          </section>
         </div>
       </div>
       <div class="page-content-4" id="page-content-4" style="margin-top: 0;">
@@ -143,7 +148,7 @@
             </li>
             <li class="data-image" id="p4-more" data-src="./images/more.png"></li>
           </ul>
-        <div class="data-image p4-app" id="p4-app" data-src="./images/app.png"></div>
+        <div class="data-image p4-app" id="p4-app" data-src="./images/app.png" role="button" tabindex="0" aria-label="打开南大家园应用"></div>
         <a href="http://qm.qq.com/cgi-bin/qm/qr?k=OtyR5Xib0OPbuAtjZtXeyVc5-a6y7zQU">
           <div class="data-image p4-follow" data-src="./images/follow.png"></div>
         </a>
@@ -151,13 +156,17 @@
     </div>
   </div>
   <div class="mengban" id="mengban">
-    <div id="close-btn"></div>
+    <div id="close-btn" role="button" tabindex="0" aria-label="关闭详情"></div>
     <div class="word-content" id="word-content"></div>
   </div>
   <div class="mengban-weixin" id="mengban-weixin">
-    <div id="close-btn-weixin"></div>
+    <div id="close-btn-weixin" role="button" tabindex="0" aria-label="关闭微信提示"></div>
     <div class="data-image" id="word-content-weixin" data-src="./images/word-content-weixin.png"></div>
     <div class="data-image" id="arrow-weixin" data-src="./images/arrow-weixin.png"></div>
+  </div>
+        </div>
+      </div>
+    </main>
   </div>
 </body>
 <script type="text/javascript" src="javascripts/words.js"></script>

@@ -39,6 +39,7 @@ body {
   z-index: 7;
   opacity: 0;
   animation: showOpacity 1.2s 0.3s forwards;
+  cursor: pointer;
 }
 
 .switch-left {
@@ -78,6 +79,7 @@ body {
   float: left;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  cursor: pointer;
 }
 
 .page-title{
@@ -157,8 +159,14 @@ body {
   top: 5%;
 }
 
-.list-3 {
+.organization-panels {
   margin-top: 3.4rem;
+  width: 9.5rem;
+}
+
+.page-content-3 {
+  height: 100%;
+  overflow: hidden;
 }
 
 .school-teams li {
@@ -178,78 +186,67 @@ body {
   color: #151515;
 }
 
-.scoll-container{
-  overflow-y:scroll;
+.school-teams::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.organization-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 9.5rem;
   height: 6.9rem;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  scrollbar-color: rgba(76, 195, 255, 0.65) transparent;
+  scrollbar-width: thin;
+  touch-action: pan-y;
 }
 
-/*替换初始jQuery-Mobile样式*/
-.ui-page-theme-a{
-  text-shadow: 0 0 0 transparent !important;
+.organization-scroll::-webkit-scrollbar {
+  width: 4px;
 }
 
-.ui-page-theme-a .ui-btn {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  text-shadow: 0 0 0 !important;
+.organization-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(76, 195, 255, 0.65);
 }
 
-.ui-page-theme-a .ui-btn:hover {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  text-shadow: 0 0 0 !important;
+.panel-title {
+  display: block;
+  width: 100%;
+  height: 1.05rem;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-size: 9rem 0.48rem;
+  background-repeat: no-repeat;
+  background-position: 0.3rem center;
+  color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.ui-page-theme-a .ui-btn:focus {
-  box-shadow: 0 0 0 !important;
-  -webkit-box-shadow: 0 0 0 !important;
-  text-shadow: 0 0 0 !important;
+.panel-title:focus-visible,
+.organization-scroll:focus-visible {
+  outline: 2px solid rgba(76, 195, 255, 0.9);
+  outline-offset: -2px;
 }
-
-.ui-page-theme-a .ui-body-inherit {
-  text-shadow: 0 0 0 transparent !important;
-}
-
-.ui-page-theme-a .ui-body-inherit {
-  background-color: transparent !important;
-  border-color: transparent !important;
-}
-
-.ui-btn-icon-notext:after, .ui-btn-icon-left:after, .ui-btn-icon-right:after {
-  display: none;
-}
-
 
 .panel-title-1 {
   background-image: url('../images/team-name-bg-1.png');
-  background-size: 9rem 0.48rem;
-  background-repeat: no-repeat;
-  background-position-y: 0.6rem;
-  background-position-x: 0.3rem;
 }
 
 .panel-title-2 {
   background-image: url('../images/team-name-bg-2.png');
-  background-size: 9rem 0.48rem;
-  background-repeat: no-repeat;
-  background-position-y: 0.6rem;
-  background-position-x: 0.3rem;
 }
 
-.panel-title a{
-  font-size: 0.5rem;
-  width: 7.9rem;
-  color: transparent !important;
-}
-
-.panel-title a::after{
-  text-align: center;
-  transition: all 0.5s ease 0s;
-}
-
-.ui-collapsible-content {
-  padding:0 0.1rem;
+.panel-title[aria-expanded='false'] {
+  opacity: 0.9;
 }
 
 
@@ -344,6 +341,7 @@ body {
   position: fixed;
   bottom: 0.9rem;
   left: 33%;
+  cursor: pointer;
 }
 .p4-follow {
   background-repeat: no-repeat;
@@ -375,7 +373,8 @@ body {
   background-repeat: no-repeat;
   background-size: 0.9rem 0.9rem;
   background-position: 5% 26%;
-  z-index: -1;
+  z-index: 0;
+  cursor: pointer;
 }
 
 #word-content-weixin{
@@ -387,6 +386,8 @@ body {
   position: fixed;
   top: 29%;
   left: 9%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 #arrow-weixin{
@@ -398,6 +399,8 @@ body {
   position: fixed;
   top: -3%;
   left: 76%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .mengban{
@@ -419,7 +422,8 @@ body {
   background-repeat: no-repeat;
   background-size: 0.9rem 0.9rem;
   background-position: 93% 8%;
-  z-index: -1;
+  z-index: 0;
+  cursor: pointer;
 }
 
 .word-content{
@@ -428,6 +432,9 @@ body {
   flex: 1;
   display: flex;
   margin: 20% 4% 8% 4%;
+  position: relative;
+  z-index: 1;
+  padding-right: 4px;
 }
 
 .frame{

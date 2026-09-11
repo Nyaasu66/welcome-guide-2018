@@ -3,35 +3,44 @@ var start = function () {
 	var pageChangeUl = document.getElementById('page-change-ul'),
 		hash = parseInt(location.hash.split('#')[1]),
 		canChange = true
+
+	function bindActivation(selector, handler) {
+		$(selector)
+			.attr('role', 'button')
+			.attr('tabindex', '0')
+			.on('click', handler)
+			.on('keydown', function (event) {
+				if (event.key === 'Enter' || event.key === ' ' || event.which === 13 || event.which === 32) {
+					event.preventDefault()
+					this.click()
+				}
+			})
+	}
+
 	pageChangeUl.getElementsByTagName('li')[hash + 1].className = 'now-page'
 	document.getElementById('page-content-' + hash).style.display = 'block'
 	$('.page-content-list li').on('touchstart', function (e) {
 		this.className = 'data-image hover'
 	})
-	$('.page-content-list li').on('touchend', function (e) {
+	$('.page-content-list li').on('touchend touchcancel', function (e) {
 		this.className = 'data-image'
 	})
-	$('.page-content-list li').on('tap', function (e) {
+	bindActivation('.page-content-list li', function () {
 		if (this.getAttribute('disabled')) {
 			window.location.href = this.getAttribute('to')
 			return
 		}
 		showMengBan(parseInt(this.getAttribute('page')), parseInt(this.getAttribute('list')))
 	})
-	$('.open-site').on('tap', function (e) {
-		window.open(this.getAttribute('href'))
-	})
-	$('#switch-right').on('tap', function () {
+	bindActivation('#switch-right', function () {
 		jumpPage()
-		console.log('right')
 		if (canChange) {
 			canChange = false
 			changePage(1)
 		}
 	})
-	$('#switch-left').on('tap', function () {
+	bindActivation('#switch-left', function () {
 		jumpPage()
-		console.log('left')
 		if (canChange) {
 			canChange = false
 			changePage(-1)
@@ -39,20 +48,32 @@ var start = function () {
 	})
 	
 
-	$('#p4-app').on('tap', 	function () { 
+	bindActivation('#p4-app', function () {
     var ua = window.navigator.userAgent.toLowerCase(); 
     if (ua.match(/MicroMessenger/i) == 'micromessenger') { 
 			document.getElementById('mengban-weixin').style.display = 'flex'; 
-			function hideWXMengBan() {
-				document.getElementById('mengban-weixin').style.display = 'none'
-			}
-			$('#close-btn-weixin').on('touchend', function () {
-				hideWXMengBan()
-			})
     } else {
 			location.href='http://incu.ncuos.com/'; 
     } 
-})
+	})
+	bindActivation('#close-btn-weixin', function () {
+		document.getElementById('mengban-weixin').style.display = 'none'
+	})
+
+	$('.panel-title').on('click', function () {
+		var button = this
+		var shouldExpand = button.getAttribute('aria-expanded') !== 'true'
+
+		$('.panel-title').each(function () {
+			this.setAttribute('aria-expanded', 'false')
+			document.getElementById(this.getAttribute('aria-controls')).hidden = true
+		})
+
+		if (shouldExpand) {
+			button.setAttribute('aria-expanded', 'true')
+			document.getElementById(button.getAttribute('aria-controls')).hidden = false
+		}
+	})
 
 
   var dataImage = document.getElementsByClassName('data-image');
@@ -128,7 +149,7 @@ var start = function () {
 	function hideMengBan() {
 		document.getElementById('mengban').style.display = 'none'
 	}
-	$('#close-btn').on('touchend', function () {
+	bindActivation('#close-btn', function () {
 		hideMengBan()
 	})
 
